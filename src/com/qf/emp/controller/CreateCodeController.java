@@ -36,7 +36,7 @@ public class CreateCodeController extends HttpServlet {
         session.setAttribute("codes" ,codes ) ;
 
         //通过 validateCode.write(） 把验证码响应给客户端
-        validateCode.write(response.getOutputStream());
+        validateCode.write(response.getOutputStream()) ;
 
     }
 }
