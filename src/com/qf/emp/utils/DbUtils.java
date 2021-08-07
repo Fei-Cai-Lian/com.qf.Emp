@@ -14,6 +14,7 @@ import java.util.Properties;
 
 /**
  * 数据库连接工具类
+ * 编写顺序：DbUtils 工具类
  */
 public class DbUtils {
     //获取数据库连接池
