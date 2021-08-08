@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * 关于员工的
+ * 实现类——实现showall
  */
 public class EmpServiceImpl implements EmpService {
     private EmpDao empDao = new EmpDaoImpl() ;

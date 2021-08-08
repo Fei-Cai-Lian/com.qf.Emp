@@ -46,7 +46,7 @@ public class EmpManagerLoginController extends HttpServlet {
                 HttpSession session = request.getSession() ;
                 session.setAttribute("empManager",empManager) ;
                 //跳转到查询所有的controller——————因为没有临时数据，所以采用重定向
-                response.sendRedirect( request.getContextPath() + "/manager/showAllEmpController") ;
+                response.sendRedirect( request.getContextPath() + "/manager/safe/showAllEmpController") ;
 
             }else {
                 //登录失败——打回登录页面——————因为没有临时数据，所以采用重定向

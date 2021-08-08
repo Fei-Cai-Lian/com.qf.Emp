@@ -21,7 +21,7 @@ public class ShowAllEmpJSP extends HttpServlet {
         //因为是查询所有，故涉及到临时数据
         //1、获取集合数据
         List<Emp> emps = (List<Emp>) request.getAttribute("emps") ;
-            //乱码的处理 丢到了过滤器里了
+            //乱码的处理 丢到了过滤器里了————filter 包下的 EncodingFilter
             //获取一个字节输出流
         PrintWriter printWriter = response.getWriter() ;
 
